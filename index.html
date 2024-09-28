@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Gap qaytarar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input, button {
+            font-size: 18px;
+            padding: 10px;
+        }
+        #output {
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Gap yozing</h1>
+    <input type="text" id="userInput" placeholder="Bu yerga yozing">
+    <button onclick="showMessage()">Yuborish</button>
+
+    <div id="output"></div>
+
+    <script>
+        function showMessage() {
+            // Foydalanuvchi kiritgan ma'lumotni olish
+            var input = document.getElementById("userInput").value;
+            
+            // Ma'lumotni sahifada ko'rsatish
+            document.getElementById("output").innerHTML = "Siz yozdingiz: " + input;
+        }
+    </script>
+
+</body>
+</html>
